@@ -1,0 +1,27 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.pyc
+*.pyo
+__init__.pyc
+__init__.pyo
+
+# Virtual environment
+venv/
+
+# Logs and databases
+*.log
+*.db
+
+# Local configuration file (modify this as needed)
+instance/config.py
+
+# Compiled Python files
+*.pyc
+
+# Package files
+*.egg-info/
+dist/
+build/
+
+# Local development settings
+.env

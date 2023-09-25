@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLUP</title>
+
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(41, 131, 150);
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 10px 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: rgb(234, 255, 0);
+}
+
+.nav-links li:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    flex: 1;
+    position: relative;
+    color: #fff;
+}
+
+.content-text {
+    padding: 70px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.content-text:hover {
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .nav-links li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.get-started-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.get-started-button:hover {
+    background-color: #258cd1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TOOLUP</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/generate_password">Password Generator</a></li>
+            <li><a href="/endencrypt">Message Encrypter</a></li>
+            <li><a href="/iptracker">IP Tracker</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="content-text">
+            <h2>Welcome to <span style="color: #3498db;">TOOLUP</span></h2>
+            <p>Your one-stop destination for essential online tools:</p>
+            <ul id="listresp" style="list-style-type:none; margin-left: -10px; font-size: 16px;align-content: center;">
+                <li>Generate <span style="color: #3498db;">strong passwords</span> with our Password Generator.</li>
+                <li>Encrypt your sensitive messages with our <span style="color: #3498db;">Message Encrypter.</span></li>
+                <li>Track and analyze IP addresses with our <span style="color: #3498db;">IP Tracker.</span></li>
+            </ul>
+            <p>Explore our tools and make your online experience <span style="color: #3498db;">secure</span> and <span style="color: #3498db;">efficient</span>!</p>
+            <a href="/generate_password" class="get-started-button">Get Started</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <h2>TOOLUP</h2>
+        </div>
+        <div class="footer-info">
+            <p>Contact:  ajaydhakad.py@gmail.com</p>
+        </div>
+        <div class="social-icons">
+            <!-- Add social media icons and links here -->
+        </div>
+    </footer>
+</body>
+</html>
